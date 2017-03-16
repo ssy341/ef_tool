@@ -53,6 +53,12 @@ function grammarMp3() {
     });
 }
 
+function jspPane(){
+    executeJs("var source = document.querySelectorAll('div.jspPane')[0].innerText; source", function (result) {
+        efcopy(result)
+    })
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('recordMp3').addEventListener('click', recordMp3);
     document.getElementById('picture2').addEventListener('click', picture2);
@@ -61,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('scriptPrint').addEventListener('click', scriptPrint);
     document.getElementById('vedio').addEventListener('click', vedio);
     document.getElementById('grammarMp3').addEventListener('click', grammarMp3);
+    document.getElementById('jspPane').addEventListener('click', jspPane);
 });
 
 
