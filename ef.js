@@ -42,7 +42,7 @@ function scriptPrint() {
 }
 
 function vedio() {
-    executeJs("var source = document.getElementsByTagName('source').getAttribute('src'); source", function (result) {
+    executeJs("var source = document.getElementsByTagName('source')[0].getAttribute('src'); source", function (result) {
         efcopy(result)
     })
 }
