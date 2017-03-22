@@ -20,7 +20,7 @@ function picture2_341(args) {
 }
 
 function grammarMp3_341(args) {
-    var mp3s = document.querySelectorAll("div[data-type='audio/mp3']");
+    var mp3s = document.querySelectorAll("audio");
     if(!mp3s && !mp3s.length){
         return;
     }
