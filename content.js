@@ -27,7 +27,7 @@ function grammarMp3_341(args) {
     var download = '';
     for (var i = 0, len = mp3s.length; i < len; i++) {
         var mp3 = mp3s[i];
-        var src = mp3.getAttribute('data-src');
+        var src = mp3.getAttribute('data-src') || mp3.getAttribute("src");
             download += src;
             download += '\n';
     }
