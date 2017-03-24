@@ -39,9 +39,9 @@ var srciptInterval;
 var script;
 function MakeScript(args) {
     console.group("追加字幕开始")
-    script = document.getElementsByClassName("mejs-captions-text")[0].innerText;
+    script = document.getElementsByClassName("mejs-subtitles-content")[0].innerText
     srciptInterval = setInterval(function () {
-        var currentText = document.getElementsByClassName("mejs-captions-text")[0].innerText;
+        var currentText = document.getElementsByClassName("mejs-subtitles-content")[0].innerText;
         if (script.indexOf(currentText) < 0) {
             // A change has happened
             console.log("追加字幕");
